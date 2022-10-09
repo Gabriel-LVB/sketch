@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: white;
+}
+
+body {
+    background-color: #272727;
+    padding: 0rem 10rem;
+}
+
+.header {
+    margin: 2rem;
+    text-align: center;
+}
+
+.selections {
+    background-color: #263948;
+    width: 30%;
+    height: 500px;
+    padding: 2rem;
+}
+
+.rangeSelection {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5rem;
+}
+
+h3 {
+    text-align: center;
+    margin: 1rem;
+    font-size: 1.5rem;
+}
+
+.displayedSize {
+    margin: 0;
+}
+
+.type h3 {
+    margin-bottom: 1rem;
+}
+
+.type {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    width: 80%;
+    height: 2.5rem;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid white;
+    transition: all 0.5s ease-out;
+    position: relative;
+}
+
+.blackWhite:hover,
+.grayscale:hover {
+    background-color: white;
+    color: #263948;
+}
+
+.grayscale:hover {
+    transition: background 3s linear;
+}
+
+.rainbow::before {
+    opacity: 0;
+    content: "Rainbow";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 0.4rem;
+    background: linear-gradient(
+        90deg,
+        rgba(255, 0, 0, 1) 0%,
+        rgba(255, 154, 0, 1) 10%,
+        rgba(208, 222, 33, 1) 20%,
+        rgba(79, 220, 74, 1) 30%,
+        rgba(63, 218, 216, 1) 40%,
+        rgba(47, 201, 226, 1) 50%,
+        rgba(28, 127, 238, 1) 60%,
+        rgba(95, 21, 242, 1) 70%,
+        rgba(186, 12, 248, 1) 80%,
+        rgba(251, 7, 217, 1) 90%,
+        rgba(255, 0, 0, 1) 100%
+    );
+    transition: all 0.5s ease-out;
+}
+
+.rainbow:hover::before {
+    opacity: 1;
+}
+
+input {
+    cursor: pointer;
+    margin-bottom: 0.5rem;
+}
