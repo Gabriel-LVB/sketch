@@ -11,28 +11,29 @@
         <div class="header">
             <h1>Etch-a-Sketch project</h1>
         </div>
-        <div class="selections">
-            <div class="rangeSelection">
-                <h3>Select grid size</h3>
-                <input
-                    type="range"
-                    name="range"
-                    id="range"
-                    value="2"
-                    min="2"
-                    max="100"
-                />
-                <h3 class="displayedSize">2x2</h3>
+        <div class="content">
+            <div class="selections">
+                <div class="rangeSelection">
+                    <h3>Select grid size</h3>
+                    <input
+                        type="range"
+                        class="range"
+                        value="2"
+                        min="2"
+                        max="64"
+                    />
+                    <h3 class="displayedSize">2x2</h3>
+                </div>
+                <div class="type">
+                    <h3>Select color type</h3>
+                    <button class="blackWhite active">Black and White</button>
+                    <button class="rainbow">Rainbow</button>
+                    <button class="grayscale">Grayscale</button>
+                </div>
             </div>
-            <div class="type">
-                <h3>Select color type</h3>
-                <button class="blackWhite">Black and White</button>
-                <button class="rainbow">Rainbow</button>
-                <button class="grayscale">Grayscale</button>
-            </div>
+            <div class="container"></div>
         </div>
-        <div class="container"></div>
 
-        <script src="./main.js-"></script>
+        <script src="./main.js"></script>
     </body>
 </html>

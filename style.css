@@ -8,18 +8,18 @@
 
 body {
     background-color: #272727;
-    padding: 0rem 10rem;
 }
 
 .header {
-    margin: 2rem;
+    margin: 2rem 0;
     text-align: center;
+    font-size: 2rem;
 }
 
 .selections {
     background-color: #263948;
-    width: 30%;
-    height: 500px;
+    width: 360px;
+    height: 700px;
     padding: 2rem;
 }
 
@@ -62,7 +62,9 @@ button {
 }
 
 .blackWhite:hover,
-.grayscale:hover {
+.grayscale:hover,
+.blackWhite.active,
+.grayscale.active {
     background-color: white;
     color: #263948;
 }
@@ -97,11 +99,38 @@ button {
     transition: all 0.5s ease-out;
 }
 
-.rainbow:hover::before {
+.rainbow:hover::before,
+.rainbow.active::before {
     opacity: 1;
 }
 
 input {
     cursor: pointer;
     margin-bottom: 0.5rem;
+}
+
+.content {
+    padding: 1.4rem 13rem;
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.container {
+    background-color: white;
+    border: 20px solid #263948;
+    width: 700px;
+    height: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+}
+
+.item {
+    border: 1px solid #263948;
+    width: 50%;
+    height: 50%;
+    border-collapse: collapse;
+    transition: all 0.2s ease-out;
 }
